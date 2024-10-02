@@ -23,4 +23,5 @@ function checkAnswer() {
 }
 
 // Add an event listener to the submit button
-document.getElementById('submit-answer').addEventListener('click', checkAnswer);
+const submitButton = document.getElementById('submit-answer');
+submitButton.addEventListener('click', checkAnswer);
