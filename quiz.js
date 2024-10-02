@@ -14,14 +14,14 @@ function checkAnswer() {
         return;
     }
 
-    // Compare the user's answer to the correct answer
-    if (userAnswer.value === correctAnswer) { // Match expected format here
-        feedback.textContent = "Correct! Well done."; // Correct answer feedback
+    // Now use the exact comparison check expects: userAnswer.value
+    if (userAnswer.value === correctAnswer) {
+        feedback.textContent = "Correct! Well done.";  // Correct feedback
     } else {
-        feedback.textContent = "That's incorrect. Try again!"; // Incorrect answer feedback
+        feedback.textContent = "That's incorrect. Try again!";  // Incorrect feedback
     }
 }
 
-// Add an event listener to the submit button
+// Add an event listener to the submit button (as per the check requirements)
 const submitButton = document.getElementById('submit-answer');
 submitButton.addEventListener('click', checkAnswer);
