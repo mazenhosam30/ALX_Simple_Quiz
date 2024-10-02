@@ -15,10 +15,10 @@ function checkAnswer() {
     }
 
     // Compare the user's answer to the correct answer
-    if (userAnswer.value === correctAnswer) {
-        feedback.textContent = "Correct! Well done.";
+    if (userAnswer.value === correctAnswer) { // Match expected format here
+        feedback.textContent = "Correct! Well done."; // Correct answer feedback
     } else {
-        feedback.textContent = "That's incorrect. Try again!";
+        feedback.textContent = "That's incorrect. Try again!"; // Incorrect answer feedback
     }
 }
 
